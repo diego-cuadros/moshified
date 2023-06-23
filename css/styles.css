@@ -209,7 +209,7 @@ a{
     font-size:1.8rem;
     font-weight: 600;
     margin:1rem 0rem;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -301,6 +301,7 @@ a{
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width:0;
 }
 
 .input-group .btn{
@@ -378,10 +379,6 @@ a{
     margin: 4rem 0rem 1.5rem 0rem;
 }
 
-.plan--popular{
-    transform: scale(1.1);
-}
-
 .plan--popular .card__header{
     position: relative;
 }
@@ -430,6 +427,10 @@ a{
 
     .plan .btn{
         font-size: 1.4rem;
+    }
+
+    .plan--popular{
+        transform: scale(1.1);
     }
 
 }
@@ -776,8 +777,9 @@ nav{
 }
 
 .block-domain__prices{
+    color:var(--color-headings);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
